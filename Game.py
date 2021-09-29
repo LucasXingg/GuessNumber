@@ -12,14 +12,14 @@ time = 1
 
 #开头
 print('Hello')
-#username = input('Please set your user name:')
+username = input('Please set your user name:')
 print('Hi ' +username+ ', here\'s a number between 0 and 100, let\'s Find out!')
 
 
 
 #body
 randomnum = random.randint(0,100)
-print(randomnum)
+#print(randomnum)
 while inputnum != randomnum :
     while True:
         inputnum = input('Let\'s Guess:')

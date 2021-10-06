@@ -1,5 +1,6 @@
-#导入包
+#初始化
 import random
+import csv
 
 #初始化函数
 username = ''
@@ -19,7 +20,7 @@ print('Hi ' +username+ ', here\'s a number between 0 and 100, let\'s Find out!')
 
 #body
 randomnum = random.randint(0,100)
-#print(randomnum)
+print(randomnum)
 while inputnum != randomnum :
     while True:
         inputnum = input('Let\'s Guess:')
@@ -41,6 +42,16 @@ while inputnum != randomnum :
             time = time + 1
 print('Congratulation' +username+'! You Find out the number in ' +str(time)+ ' times')  #finish
 
+#写入排名
 
+result = (username,time)
+
+
+csvfile = open('ranking.csv','a')
+ranking = csv.writer(csvfile)
+ranking.writerow(result)
+csvfile.close()
+#for i in ranking:
+#print(ranking)
 
 

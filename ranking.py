@@ -14,4 +14,4 @@ for i in ranking:
 
 for j in list:
     ilist = j
-    print('username:' +ilist[0]+ ' ,times' +ilist[1])
+    print('username:' +ilist[0]+ ' times' +ilist[1])

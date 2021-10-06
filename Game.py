@@ -43,9 +43,10 @@ while inputnum != randomnum :
 print('Congratulation' +username+'! You Find out the number in ' +str(time)+ ' times')  #finish
 
 #写入排名
+if username == '':
+    username = 'unnamed'
 
-result = (username,time)
-
+result = [username,time]
 
 csvfile = open('ranking.csv','a')
 ranking = csv.writer(csvfile)
